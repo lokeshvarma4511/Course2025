@@ -1,0 +1,58 @@
+----Method Overloading:----
+
+Creating multiple methods keeping the same method name and changing the parameters
+
+# different return types
+# different parameter types
+# different parameters count
+
+----STACK AND HEAD----
+
+class Pen
+{
+    int c=3;
+    public String getMePen(int money)
+    {
+        if (money>=10) {
+            System.out.println("oka pennu 10rs");
+        return "Pen";
+        }
+        else return money + "rs ki nee Maddakuuda raadhu";
+    }
+}
+public class Methods {
+    public static void main(String[] args) {
+        int a=2;
+        int b=4
+        Pen g1=new Pen();
+
+        System.out.println(g1.getMePen(2));
+    }
+}
+
+
+--STACK
+Locals variables get storeD in STACK
+Method can occupy in stack
+reference variables also get storeD in Stack (apple A1(ref var)=new apple), but the value get stored in Heap. since,  its an object
+
+MAIN
+a=2
+b=4
+g1=
+A1=101(address of pen in heap)
+
+
+getMePen
+money=2
+
+
+--HEAP
+Instance variables get store in Heap
+Instance methods also stored in Heap, bu the method variables stores in stack
+
+
+PEN
+# 101
+c=3
+getMePen() then getMePen will has a stack
