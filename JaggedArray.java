@@ -22,6 +22,35 @@ public class JaggedArray {
         }
         System.out.println();
     }
+
+    // 3D ARRAYS
+    System.out.println("3D array");
+    int b[][][]=new int[3][4][2];
+
+    for(int i=0;i<b.length;i++)
+    {
+        for(int j=0;j<b[i].length;j++)
+        {
+            for(int k=0;k<b[i][j].length;k++)
+            {
+                b[i][j][k]=(int)(Math.random()*100);
+                System.out.println(b[i][j][k]+" ");
+            }
+        }
     }
 
+    for(int i=0;i<b.length;i++)
+    {
+        for(int j=0;j<b[i].length;j++)
+        {
+            for(int k=0;k<b[i][j].length;k++)
+            {
+                System.out.print(b[i][j][k]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    }
 }
