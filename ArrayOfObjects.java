@@ -40,7 +40,8 @@ public class ArrayOfObjects
         System.out.println("----ENHANCED FOR LOOP----");
         for(Student stud:students)
         {
-            System.out.println(stud.name);
+            System.out.println(stud.name +","+ stud.rollno+","+stud.Blood);
+            
         }
     }
 }
